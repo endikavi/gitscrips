@@ -3,8 +3,6 @@
 see.bat | findstr /C:"%1"
 if %errorlevel% GEQ 1 GOTO:error1
 
-cls
-
 echo Subiendo Cambios de %1
 git push origin %1
 git checkout master
