@@ -8,7 +8,7 @@ git push origin %1
 git checkout master
 echo Actualizando ultimos cambios desde Origen
 git pull
-echo Añadiendo cambios de %1 a master local
+echo Cambios de %1 a master local
 git pull origin %1
 echo Subiendo Cambios
 git push origin master | findstr /C:"failed"
@@ -39,4 +39,4 @@ git branch -D %1
 echo Borrando la Rama en remoto
 git push origin :%1
 git checkout master
-echo Se ha finalizado la Rama y añadido a master correctamente
+echo Se ha finalizado la Rama %1 correctamente
