@@ -1,3 +1,3 @@
-exec > /dev/null 2>&1
-echo Ramas actuales:
+exec > /dev/null
+echo 'Ramas actuales:'
 git branch -a

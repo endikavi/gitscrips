@@ -1,10 +1,10 @@
-exec > /dev/null 2>&1
+exec > /dev/null
 
-see.sh | grep "$1"
+see.sh | grep $1
 
-if ($1 != 0){
+if ![$1 == 0];then
     error1
-}
+fi
 
 echo Subiendo Cambios de $1
 
