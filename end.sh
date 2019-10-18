@@ -1,10 +1,13 @@
-exec > /dev/null
-
 see.sh | grep $1
 
-if ![$1 == 0];then
-    error1
+if [[ "$?" == 1 ]];then
+    echo La rama $1 no existe
+    exit
 fi
+
+echo La rama $1 existe
+
+exit
 
 echo Subiendo Cambios de $1
 
@@ -36,13 +39,6 @@ resolve(){
     }
 
     end
-
-}
-
-error1(){
-
-    echo La rama $1 no existe
-    exit
 
 }
 
