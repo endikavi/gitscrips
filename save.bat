@@ -1,4 +1,6 @@
 @echo off
+echo Formating files
+prettier "*.js"
 echo Saving changes...
 git add *
 git status

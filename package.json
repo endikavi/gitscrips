@@ -1,0 +1,22 @@
+{
+  "name": "gitscrips",
+  "version": "1.0.0",
+  "description": "Simple scripts",
+  "main": " ",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endikavi/gitscrips.git"
+  },
+  "author": "Endikavi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/endikavi/gitscrips/issues"
+  },
+  "homepage": "https://github.com/endikavi/gitscrips#readme",
+  "devDependencies": {
+    "prettier": "1.18.2"
+  }
+}
