@@ -24,5 +24,6 @@ So you can use as follow in your git local repos
   - reset "BranchName" // Reset Branch to last commit on origin
   - push "BranchName" // Simple push from that branch to origin
   - see // To see all branches in local and remote
+  - reformat // format js using prettier // install using: npm install --global prettier
   
 - Im working to add more usefull scripts to automate usual working flows, and add fail exceptions
