@@ -1,3 +1,3 @@
 @echo off
 echo "Formating code in files:"
-prettier --write "*.js"
+prettier --use-tabs true --write "*.js"
