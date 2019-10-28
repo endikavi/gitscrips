@@ -1,2 +1,2 @@
-echo 'Ramas actuales:'
+echo 'Actual Branches:';
 git branch -a

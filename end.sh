@@ -1,23 +1,21 @@
 see.sh | grep $1;
 
 if [[ "$?" == 1 ]];then
-    echo La rama $1 no existe
+    echo "There is not Branch named $1";
     exit
 fi
 
-echo La rama $1 existe
-
-echo Subiendo Cambios de $1
+echo "Uploading changes from $1 to origin";
 
 git push origin $1;
 
 git checkout master;
 
-echo Actualizando ultimos cambios desde Origen
+echo "Updating last master changes from origin";
 git pull;
-echo Cambios de $1 a master local
+echo "Adding changes from origin $1 to local master"
 git pull origin $1;
-echo Subiendo Cambios
+echo "Uploading local master to origin"
 git push origin master | gret "failed";
 
 if [[ "$?" == 1 ]];then
@@ -28,12 +26,12 @@ end
 
 resolve(){
 
-    echo Se han encontrado cambios en master remoto
+    echo "master is outdated, resolving...";
     git pull origin master;
     git push origin master | gret "failed";
 
     if [[ "$?" == 1 ]];then
-    resolve
+        resolve
     fi
 
     end
@@ -42,11 +40,11 @@ resolve(){
 
 end(){
 
-    echo Borrando la Rama en local
+    echo "Deleting local branch";
     git branch -D $1;
-    echo Borrando la Rama en remoto
+    echo "Deleting branch in origin";
     git push origin :$1;
     git checkout master
-    echo Se ha finalizado la Rama $1 correctamente;
+    echo "$1 Ended successfully";
 
 }

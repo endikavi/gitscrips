@@ -1,12 +1,12 @@
 exec > /dev/null
-echo 'Actualizando datos desde Origen'
+echo "Updating master from origin"
 
 git checkout master;
 
 git pull origin master;
 
-echo Creando nueva rama $1;
+echo "Creating new branch named $1";
 
 git checkout -b $1 master;
 
-echo 'Creada, ya puedes hacer cambios'
+echo "Success"
