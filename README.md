@@ -1,9 +1,10 @@
-# gitscrips - Simple scrips for git
+# gitscrips - Simple scripts for simple workflow
 
-This scripts are for woking in a simple workflow, usefull to avoid usual problems.
-The script are on testing state but work as intended.
-I recommend using alias in Linux or if in Windows add this cloned repo path to system variable PATH
-So you can use as follow in your git local repos
+This scripts are for working using branchs and merge changes in master, usefull to avoid common problems.
+The script are on test state but usually work as intended.
+I recommend using alias or add this cloned repo path to system variable PATH.
+So you can use as follow in your git local repos.
+Usual Workflow:
 
 # new "BranchName"
 
