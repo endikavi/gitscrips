@@ -1,16 +1,15 @@
-function test(fisrtvar,secondvar,thirdvar,fourvar){
+function test(fisrtvar, secondvar, thirdvar, fourvar) {
+  console.log("hola");
 
-console.log('hola')
+  console.log("adios");
 
-		console.log('adios')
-
-		return;
+  return;
 }
 
-	   console.log("bad all bad");
-	   
+console.log("bad all bad");
 
-	   new HTMLOptGroupElement;
+new HTMLOptGroupElement();
 
+test(x, y, w, s);
 
-test(x,y,w,s);
+//sdfdsfsdfsdf
