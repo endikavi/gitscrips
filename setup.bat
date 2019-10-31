@@ -1,7 +1,7 @@
 @echo off
 echo Setup for the new repo:
 
-set /p pathr= Repo path?
+set /p pathr= Repo local path?
 
 :begin
 
